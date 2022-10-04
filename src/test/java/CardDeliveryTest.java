@@ -41,7 +41,7 @@ public class CardDeliveryTest {
         $("[data-test-id='agreement'] .checkbox__box").click();
         $$("button").find(Condition.exactText("Забронировать")).click();
         $(".button__text").shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно"), Duration.ofSeconds(15));
+        $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно!"), Duration.ofSeconds(15));
         $(withText("Встреча успешно забронирована на")).shouldBe(Condition.visible, Duration.ofSeconds(15));
         $(withText("Встреча успешно забронирована на")).shouldBe(Condition.text(date));
     }
