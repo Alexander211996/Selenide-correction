@@ -22,4 +22,5 @@ dependencies {
 
 test {
     useTestNG()
+    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
