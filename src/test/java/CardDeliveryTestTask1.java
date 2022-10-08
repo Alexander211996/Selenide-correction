@@ -45,8 +45,9 @@ public class CardDeliveryTestTask1 {
         $$("button").find(Condition.exactText("Забронировать")).click();
         $(".button__text").shouldBe(Condition.visible, Duration.ofSeconds(15));
         $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно!"), Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.text(date));
+        $(withText("Встреча успешно забронирована на"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(15))
+                .shouldBe(Condition.text(date));
     }
 
     @Test
@@ -61,8 +62,9 @@ public class CardDeliveryTestTask1 {
         $$("button").find(Condition.exactText("Забронировать")).click();
         $(".button__text").shouldBe(Condition.visible, Duration.ofSeconds(15));
         $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно!"), Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.text(date));
+        $(withText("Встреча успешно забронирована на"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(15))
+                .shouldBe(Condition.text(date));
     }
 
     @Test
@@ -128,8 +130,9 @@ public class CardDeliveryTestTask1 {
         $$("button").find(Condition.exactText("Забронировать")).click();
         $(".button__text").shouldBe(Condition.visible, Duration.ofSeconds(15));
         $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно!"), Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.text(date));
+        $(withText("Встреча успешно забронирована на"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(15))
+                .shouldBe(Condition.text(date));
     }
 
     @Test
@@ -157,8 +160,9 @@ public class CardDeliveryTestTask1 {
         $$("button").find(Condition.exactText("Забронировать")).click();
         $(".button__text").shouldBe(Condition.visible, Duration.ofSeconds(15));
         $("[data-test-id='notification'] .notification__title").shouldHave(Condition.exactText("Успешно!"), Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $(withText("Встреча успешно забронирована на")).shouldBe(Condition.text(date));
+        $(withText("Встреча успешно забронирована на"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(15))
+                .shouldBe(Condition.text(date));
     }
 
     @Test
